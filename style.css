@@ -1,0 +1,285 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+header{
+    background-color: #F8F8F8;
+    text-align: center;
+}
+
+h1{
+    color: #143774;
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    font-weight: normal;
+}
+
+header p {
+    color: #1792D2;
+    font-size: .75rem;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+header p,
+ul a,
+.continue-reading{
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 1.42em;
+}
+
+ul li{
+    padding-bottom: 1.42em;
+}
+
+ul a{
+    color: #717171;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+ul a:hover,
+ul a:focus{
+    color: #1792D2;
+}
+
+.current-page{
+    border-bottom: 1px solid #707070;    
+}
+.current-page:hover,
+.current-page:focus{
+    color: #707070;
+}
+
+.site-title{
+    padding-top: 1.42em;/*42px*/
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.post,
+.main-post{
+    margin: 1.42em 0; 
+    border-bottom: 1px solid #707070;    
+}
+
+.post img,
+.main-post img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.post h3,
+.main-post h3{
+    font-size: 1.5rem;
+    color: #143774;
+    font-weight: normal;
+}
+
+.post p,
+.main-post p{
+    font-size: 1.125rem;
+    color: #707070;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.post a,
+.main-post a{
+    color: #1792D2;
+}
+
+.post .continue-reading,
+.main-post .continue-reading{
+    color: #1792D2;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title h3{
+    margin: 0;
+}
+
+.comments .small{
+    font-size: .875rem;
+    margin-bottom: 1em;
+}
+
+.about-me{
+    margin-bottom: 4.875em;
+    padding:0 1.56em ;
+    color: #143774;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+.about-me h3{
+    color: white;
+}
+
+.about-me img,
+.recent-posts img{
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.about-me,
+.recent-posts{
+    border: 20px solid #EBEBEB;
+}
+
+.recent-posts{
+    padding: 0 1.56em;
+    color: #143774;
+}
+
+.recent-posts h3{
+    text-transform: uppercase;
+}
+
+.underline{
+    border-bottom: 1px solid #707070; 
+    margin-bottom: 1em;   
+}
+
+.simple{
+    border: none;
+}
+
+.simple img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.simple h2{
+    font-weight: normal;
+}
+
+.simple h3{
+    color: #1792D2;
+}
+
+footer{
+    background-color: #143774;
+    margin: 0;
+    color: white;
+    background-blend-mode: multiply;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (min-width:650px){
+
+    .container{
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .site-header{
+        display: flex;
+        justify-content:  space-between;
+    }
+
+    .site-title{
+        margin-bottom: 1.42em;
+    }
+
+    ul{
+        flex-direction: row;
+    }
+
+    ul li{
+        margin-left: 2em;
+    }
+
+    .section1{
+        width: 70%;
+    }
+
+    .section2{
+        width: 25%;
+        margin-top: 1.42em; 
+        margin-bottom: 0;
+    }
+
+    .about-me{
+        padding: 0 1em;
+        margin-bottom: 2em;
+    }
+
+    .about-me h3{
+        color: #143774;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .about-me p{
+        font-size: 1rem;
+    }
+
+    .post{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: none;
+    }
+
+    .post.main-post img{
+        width: 100%;
+    }
+    .post img{
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .comments{
+        flex-direction: column;
+        width: 26%;
+    }
+
+    .title{
+        width: 70%;
+        line-height: 2em;
+    }
+
+    .main-post{
+        line-height: 2em;
+    }
+
+    .comments p{
+        margin-top: 1em;
+    }
+
+    .simple{
+        display: block;
+    }
+}
